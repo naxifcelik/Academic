@@ -1,3 +1,4 @@
+#Nazif ÇELİK 090200712
 import numpy as np
 from PIL import ImageGrab
 from PIL import Image
