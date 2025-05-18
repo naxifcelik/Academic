@@ -1,0 +1,250 @@
+\documentclass[12pt]{article}
+
+\title{ \texttt{klasik mekanik ödevi 2}}
+\author{Nazif ÇELİK 090200712}
+\date{17.03.2023}
+\begin{document}
+\maketitle
+\href{https://github.com/naxifcelik/classical-mechanics/blob/main/hw2.tex}
+\section{önceki ödevde yapıldı}
+\newpage
+\section{}
+motorun gücü (P) = W/t şeklinde ifade edilebilir.
+
+Arabanın ivmesi a, motorun gücü P ve kütlesi m arasındaki ilişki, aşağıdaki şekilde ifade edilebilir:
+
+P = Fv
+
+P = mav
+
+a = F/m = P/vm
+
+$\frac{dV}{dt}$=$\frac{P}{V.m}$
+
+V.dV=$\frac{P.dt}{m}$
+
+\int V.dV=$\int \frac{P.dt}{m}$
+\bigbreak
+V(t)^2/2=\frac{Pt}{m}
+
+m=1000 kg ve P=100kW için V(t):
+
+$V(t)=\sqrt{200t}$ m/s
+
+ ayrıca $a=\frac{dv}{dt}$ olduğu için
+\bigbreak
+ $a(t)=(\frac{P}{2mt})$
+ \bigbreak
+ $a(t)=\sqrt{\frac{50}{t}}$ m/s^2
+
+ 
+\newpage
+\section{}
+A Köprüsü ile B Köprüsü arasındaki mesafenin d olduğunu ve nehrin akıntı hızının $V_s$ olduğunu varsayalım. 
+
+Teknenin suya göre hızı  $V_r = V_o - V_s$ ile verilecektir, burada $V_o$ teknenin yere göre hızıdır.
+
+Teknenin A Köprüsünden B Köprüsüne gitmesi için geçen süre $t = d / V_o$ olacaktır.
+
+Bu süre boyunca, teknenin yer değiştirdiği su hacmi $SV_ot = SV_od / V_o$ olacaktır. 
+
+Bu hacimdeki suyun yerini değiştirmek için tekne motorunun yaptığı iş şu şekilde verilir:
+\bigbreak
+W= $\frac{1}{2}$ \times C_D \times P \times V_o^2 \times S \times (SV_o\frac{d}{V_o})
+
+sadeleştirirsek
+
+W= $\frac{1}{2}$ \times C_D \times P \times V_o \times S \times SV_od
+
+o bu enerjiyi en aza indiren hızı bulmak için W'nin Vo'ya göre türevini alıp sıfıra eşitlemeliyiz:
+\bigbreak
+$\frac{dW}{dV_o}$= $\frac{1}{2}$ \times C_D \times P \times S \times SV_od - $$\frac{1}{2}$$ \times C_D \times P \times V_o \times S \times SV_o \times 2  \times V_o=0
+
+bunu sadeleştirirsek:
+\bigbreak
+C_D \times P \times S \times SV_od=C_D\times P\times V_O^2\times S\times SV_O^2
+
+$V_O$ burdan şöyle çıkar
+
+V_o=\sqrt{\frac{SV_od}{SV_o^2}}=\sqrt{\frac{d}{SV_o}}
+
+teknenin tükettiği enerjiyi en aza indirecek hız şu şekilde yazılabilir:
+
+V_o=\sqrt{\frac{d}{SV_o}}
+\bigbreak
+Bu sonuç, teknenin itici gücünün değerine veya nehir akıntısının hızına bağlı değildir.
+
+Yalnızca A Köprüsü ile B Köprüsü arasındaki mesafeye ve suyun teknenin önünden kaçma hızına bağlıdır.
+
+\newpage
+\section{}
+Coriolis ivmesi şu şekilde verilir:
+a = 2$\omega$ × v
+burada $\omega$, Dünyanın açısal hızıdır ve v, üst akımın hızıdır. İstanbul'un yaklaşık 41°K enleminde Dünya'nın açısal hızı:
+\bigbreak
+$\omega$ = 2π/24 × cos(41°) = 7,292 × 10^-5 rad/s
+
+Verilen değerleri değiştirerek şunu elde ederiz:
+
+a = 2 × 7,292 × 10^-5 rad/s × 1 m/s ≈ 1,46 × 10^-4 m/s^2
+
+Yani Coriolis ivmesi doğu yönünde yaklaşık 1.46 × 10^-4 m/s^2'dir.
+
+Boğaz'ın batı ve doğu kıyıları arasındaki akıntı nedeniyle oluşan seviye farkı, bir sıvının basıncını, hızını ve yüksekliğini ilişkilendiren Bernoulli denklemi kullanılarak tahmin edilebilir:
+
+P + 1/2$\rho$v^2 + $\rho$gh = sabit
+
+P basınç, $\rho$ sıvının yoğunluğu, v hız, h yükseklik ve g yerçekimi ivmesidir. Boğazın her iki tarafındaki basıncın ve yoğunluğun sabit olduğunu varsayarsak, yükseklik farkını şu şekilde çözebiliriz:
+
+$1/2$\rho$v^2 + $\rho$gh = sabit$
+
+1/2 × 1000 kg/m^3 × (1 m/s)^2 + 1000 kg/m^3 × g × h = 1/2 × 1000 kg/m^3 × (1 m/s)^2 + 1000 kg/m^3 × gr × 0
+
+h = v^2/2g = (1 m/s)^2/2 × 9,81 m/s^2 ≈ 0,051 m
+
+Yani İstanbul Boğazı'nın batı ve doğu kıyıları arasında akıntı nedeniyle oluşan kot farkı yaklaşık 0,051 m'dir.
+\newpage
+Güneşin Dünya üzerindeki yerçekimi ivmesi, Newton'un yerçekimi yasası kullanılarak hesaplanabilir:
+
+F = GmM/r^2
+
+burada F yerçekimi kuvvetidir, G yerçekimi sabitidir, m Dünya'nın kütlesidir, M güneşin kütlesidir ve r Dünya'nın merkezleri ile güneş arasındaki mesafedir. Yerçekimi ivmesi şu şekilde verilir:
+
+g = F/m = GM/r^2
+
+Dünyanın merkezleri ile güneş arasındaki mesafeyi, aralarındaki ortalama mesafe olarak yaklaşık 150 milyon km veya 
+$1,5\times10^{11}$ metre olarak tahmin edebiliriz. 
+
+Dünyanın kütlesi yaklaşık olarak $5,97\times10^{24}$ kg'dır. 
+
+Yaklaşık $6.674\times10^{-11} N·m^2/kg^2$ olan yerçekimi sabiti G'nin değerini kullanabiliriz. 
+Bu değerleri değiştirerek şunu elde ederiz:
+\bigbreak
+\LARGE$0,00593 m/s^2\approx\frac{6,674\times10^{-11} N·m^2/kg^2\times1,5\times10^{11} m^3/kg^2}{(1,5\times10^11 m)^2}$
+\bigbreak
+\normalsize
+Yani Güneş'in Dünya üzerindeki yerçekimi ivmesi yaklaşık olarak 0.00593 m/s^2'dir.
+\newpage
+\section{}
+Yükseklik fonksiyonunun gradyanı, herhangi bir noktada (x, y) en dik yükselişin yönünü verir:
+
+\nabla{z} = ( \frac{\partial{z}}{\partial{x}},  \frac{\partial{z}}{\partial{y}}) = (0,25x/L, 0,5y/L)
+
+
+
+(L, L/2) noktasında, gradyan:
+
+\nabla{z} = (0,25L/L, 0,5(L/2)/L) = (0,25, 0,25)
+
+Motor tarafından sağlanan itme kuvveti T = mg/10'dur, burada m cipin kütlesi ve g yerçekimi ivmesidir. Cipin ağırlığı W = mg, dolayısıyla T = W/10'dur.
+
+Eğim yönünde motor tarafından sağlanan kuvvet:
+
+F = T \times |\nabla{z}| = (W/10) * \sqrt{0,25^2 + 0,25^2} = (W/10) * 0,3536
+
+Gradyan yönündeki birim vektör:
+
+u = (1/\sqrt2, 1/\sqrt2)
+
+Bu nedenle, gradyan yönündeki kuvvet vektörü:
+
+F_v = F\times{u} = (W/10)\times 0,3536 \times (1/√2, 1/√2) = (W/20) \times (1, 1)
+
+\bigbreak
+Problem, bir cipin hız vektörü ile değişen yükseklikteki bir arazide hareket ederken motorunun uyguladığı kuvvet vektörü arasındaki açıyı bulmayı içerir. Arazinin yüksekliği x ve y'nin bir fonksiyonu ile verilir ve cipin kaldırabileceği en dik eğim, bu fonksiyonun eğimi yönündedir.
+
+En dik yokuşun yönünü bulmak için cipin bulunduğu noktadaki yükseklik fonksiyonunun gradyanını hesaplıyoruz. Bu bize en dik yokuşun yönünü gösteren bir vektör verir ve bu yöndeki kuvvet vektörünü Jeep'in motorunun sağladığı itme kuvvetini kullanarak hesaplayabiliriz.
+
+
+
+Cipin hızı verili değildir, dolayısıyla gerçek hız vektörünü belirleyemeyiz. Ancak, kuvvet vektörü ile k yönü (dikey) arasındaki açıyı iç çarpımı kullanarak bulabiliriz:
+\bigbreak
+V_z(x, y) = \frac{\partial{z}}{\partial{t}} = 0 
+
+(çünkü z zamana bağlı değildir)
+
+V = (V_x, V_y, V_z) = (V_x, V_y, 0) 
+
+(z yönünde hareket olmadığından)
+\bigbreak
+Daha sonra, cipin problemde açıkça verilmeyen hız vektörünü bulmamız gerekiyor. Ancak cipin geçtiği nokta bize veriliyor ve en dik yokuş yönünde hareket ettiğini biliyoruz. Bu, hız vektörünün, yükseklik fonksiyonunun gradyanı yönünde kuvvet vektörüyle orantılı olması gerektiği anlamına gelir. Cipin hızını bilmiyoruz, ancak aralarındaki açıyı bulmak için hız vektörü ile kuvvet vektörü arasındaki iç çarpımı kullanabiliriz.
+
+
+
+
+
+
+Kuvvet vektörünün ve k yönündeki birim vektörün iç çarpımı şu şekildedir:
+\bigbreak
+F_v\cdot{k} = (W/20) * (1, 1) · (0, 0, 1) = 0
+
+Kuvvet vektörünün büyüklüğü:
+\bigbreak
+\mid{F_v}\mid = \sqrt{(G/20)^2 + (G/20)^2} = (G/20) \times \sqrt{2}
+
+Hız vektörü ile kuvvet vektörünün iç çarpımı şu şekildedir:
+\bigbreak
+V · F_v = (V_x, V_y, 0) · (G/20) * (1, 1) = (G/20) * (V_x + V_y)
+
+Hız vektörünün büyüklüğü:
+
+\mid{V}\mid = \sqrt{Vx^2 + Vy^2}
+
+Bu nedenle, kuvvet vektörü ile hız vektörü arasındaki açı şu şekildedir:
+\bigbreak
+\LARGE
+\theta = \frac{cos^{-1}[(V . F_v)} {(|V| \times |F_v|)]} = \frac{cos^{-1}[(W/20)(V_x + V_y)} {(|V| \times (W/20)\sqrt{2})} = cos^{-1}\frac{[(V_x + V_y)}{(\sqrt{2} |V|)]}
+\bigbreak
+\normalsize
+$\theta$ değerinin cipin verilmeyen hızına bağlı olduğuna dikkat edin.
+
+\bigbreak
+ÖZETLE
+
+Kuvvet vektörü ile k yönü (dikey) arasındaki açı, kuvvet vektörü ile k yönündeki birim vektörün iç çarpımı alınarak bulunabilir. Bunun nedeni, kuvvet vektörünün k yönüne dik düzlemde bulunmasıdır. Kuvvet vektörü ile hız vektörü arasındaki açıyı bilerek, kuvvet vektörü ile k yönüne dik düzleme yansıtılan hız vektörü arasındaki açıyı bulmak için iç çarpımı tekrar kullanabiliriz. Son olarak, üç boyutlu uzayda kuvvet vektörü ile hız vektörü arasındaki açıyı bulmak için trigonometri kullanabiliriz.
+\newpage
+\section{}
+$A\times(B\times{C})$ İfadesi, üçlü vektör çarpımı olarak bilinir ve hem A'ya hem de B x C'ye dik olan bir vektör verir. B ve C birbirine dik ise, o zaman B x C, hem B'ye hem de B x C'ye dik olan bir vektördür. C. Bu nedenle $A\times(B\times{C})$ , A, B ve C'ye diktir ve B ve C'yi içeren düzlemde yer alır.
+
+A=(B.A).B+(C.A).C ifadesi A'nın B ve C'yi içeren düzleme vektörel izdüşümü olarak bilinir.
+
+Bu ifade bize B ve C'yi içeren düzlemde uzanan ve A'ya paralel olan bir vektör verir.
+
+Bunun neden doğru olduğunu görmek için önce A'nın B'ye paralel bileşenini ele alalım. 
+
+Bu bileşen şu şekilde yazılabilir:
+\bigbreak
+
+$\frac{(A.B).B}{|B|^2}$
+\bigbreak
+burada $\mid{B}\mid$ ,B'nin büyüklüğüdür.
+
+Bu ifade bize B'ye paralel ve büyüklüğü $\frac{(A.B)}{|B|}$ olan bir vektör verir.
+
+Benzer şekilde, A'nın C'ye paralel olan bileşeni $\frac{(A.C).C}{|C|^2}$ olarak yazılabilir. 
+
+burada $\mid{C}\mid$ ,C'nin büyüklüğüdür.
+\bigbreak
+Bu nedenle, A'nın B ve C'yi içeren düzlem üzerindeki vektör izdüşümü şu şekilde yazılabilir:
+
+$\frac{(A.B).B}{|B|^2}$+$\frac{(A.C).C}{|C|^2}$
+
+Bu ifadeyi (B x C) ile çarparak şunu elde ederiz:
+
+$(B\times{C})\frac{(A.B).B}{|B|^2}$+$(B\times{C})\frac{(A.C).C}{|C|^2}$
+
+Bx(CxD)=(B.C)D-(B.D)C, tanımını kullanarak ifadeyi aşapıdaki gibi sadeleştirebiliriz:
+
+$(B\times{C})\frac{(A.B).B}{|B|^2}$+$(B\times{C})\frac{(A.C).C}{|C|^2}$
+
+=(C.A)Bx(BxC)-(B.A)Cx(BxC)
+
+=(C.A)BxC-(B.A)CxB
+
+=(C.A)B-(B.A)C
+\bigbreak
+Bu nedenle Ax(BxC) ifadesinin B ve C birbirine dik olmasa bile 
+
+BC((C.A)B-(B.A)C) olarak yazılabileceğini göstermiş olduk.
+\end{document}
+

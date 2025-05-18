@@ -1,0 +1,156 @@
+\documentclass[12pt]{article}
+
+\title{ \texttt{klasik mekanik ödevi 3}}
+\author{Nazif ÇELİK 090200712}
+\date{27.03.2023}
+\begin{document}
+\maketitle
+\href{https://github.com/naxifcelik/classical-mechanics/blob/main/hw3.tex}
+\newpage
+\large
+\section{7. soru}
+Problemi çözmek için önce noktasal kütlenin tellerden aşağı kayarken hareket denklemini bulmamız gerekiyor. Bunu enerjinin korunumunu kullanarak yapabiliriz. Telin tepesinde, kütle Mgh potansiyel enerjiye sahiptir, burada h, kütlenin telin altından yüksekliğidir (Referans seviyemiz olarak alıyoruz). Diğer herhangi bir h' yüksekliğinde, kütle Mgh' potansiyel enerjiye sahiptir.
+
+Telden aşağı kayarken yerçekiminin kütle üzerinde yaptığı iş, potansiyel enerjideki değişime eşittir, dolayısıyla şunu elde ederiz:
+
+$(1/2)MV^2+Mgh_Mgh'$
+Burada V, h' yüksekliğindeki kütlenin hızıdır. V için çözerek şunu elde ederiz:
+
+$V=\sqrt{2g(h-h')}$
+
+Şimdi h' yüksekliğindeki değeri bulmak için telin şu denklemini kullanabiliriz:
+$\rho=\phi\rho0ve$
+Bu ifadeyi V denkleminde yerine koyarak,
+
+$V=\sqrt{2g(h-h')}=\sqrt{2gh}\times\sqrt{1-\frac{2h'}{3ve}}$
+
+Daha sonra, hızın zamana göre türevini bulabiliriz. Zincir kuralını kullanarak şunu elde ederiz:
+
+$\frac{dV}{dt}=\frac{dV}{dh'}\times\frac{dh'}{d\phi}\times\frac{d\phi}{dt}$
+
+Sağ taraftaki ilk terim, V'nin ifadesinin h''ye göre türevi alınarak bulunabilir:
+
+$\frac{dV}{dh'}=-\sqrt{\frac{2g}{3ve}}\times\sqrt{\frac{h}{h'-h}}$
+
+İkinci terim basitçe $\phi$ denkleminin h' ye göre türetilmesidir:
+
+$\frac{dh'}{d\phi}=\rho0ve$
+\newpage
+Üçüncü terim, telin açısal hızını kullanarak bulabileceğimiz $\phi$'nin zaman türevidir. L, tel üzerindeki bir noktanın bir radyanda kat ettiği mesafe olduğundan, $\omega$ açısal hızı:
+
+$\omega=\frac{V}{L}$
+
+V ifadesinde yerine koyarsak
+
+$\omega=(\frac{1}{L})\times\sqrt{2gh}\times\sqrt{1-\frac{2h'}{3ve}}$
+
+$\frac{d\phi}{dt}=\frac{\omega}{\frac{d\phi}{dh'}}=\frac{\omega}{\rho0ve}$
+
+$\frac{dV}{dt}=-\sqrt{\frac{2g}{3ve}}\times\sqrt{\frac{h}{h'-h}}\times\rho0ve\times\omega$
+
+Son olarak, h' yüksekliğindeki merkezcil ivme vektörünü aşağıdaki formülü kullanarak bulabiliriz:
+
+$a_c=\rho(\frac{d\phi}{dt})^2$
+
+İfadelerde $\rho$ ve $\frac{d\phi}{dt}$'yi değiştirerek şunu elde ederiz:
+
+$a_c=\frac{h'}{ve}\times(\frac{\omega}{\rho0ve})^2\times\rho0\times e_r$
+
+burada $e_r$, radyal yöndeki birim vektördür.
+
+
+
+
+
+
+\newpage
+\section{8. soru}
+Arşimet yasası, bir sıvıya daldırılan bir nesnenin maruz kaldığı kaldırma kuvvetinin, nesne tarafından yeri değiştirilen sıvının ağırlığına eşit olduğunu belirtir.
+
+Bu yasa, minimum yerçekimi potansiyel enerjisi ilkesiyle tutarlıdır çünkü bir nesne bir sıvıya daldırıldığında, sıvı nesneye yukarı doğru kaldırma kuvveti uygular ve bu da nesnenin etkin ağırlığını azaltır.
+
+Bu nedenle, nesne sıvıya daldırıldığında havada olduğu duruma kıyasla daha küçük bir yerçekimi potansiyel enerjisi yaşar.
+
+Bunun neden böyle olduğunu görmek için, yoğunluğu ρ/2 olan ve hacmi V olan bir küpü yarıya kadar ρ yoğunluğundaki bir sıvıya daldırın.
+Küpün ağırlığı, $W=(\frac{\rho}{2})gV$
+
+Küp tarafından yeri değiştirilen sıvının ağırlığı şu şekilde verilir:
+$\frac{\rho gV}{2}$
+\bigbreak
+burada V/2, küp tarafından yeri değiştirilen sıvının hacmidir. Arşimet yasasına göre küp üzerindeki kaldırma kuvveti, yeri değiştirilen sıvının ağırlığına eşittir, dolayısıyla kaldırma kuvveti de ρgV/2'dir.
+
+Küp yarıya kadar batırıldığında, ağırlığına eşit yukarı doğru bir kaldırma kuvveti ile karşılaşır, bu nedenle dengededir.
+
+Küpün yerçekimi potansiyel enerjisi U = Wz ile verilir, burada z, küpün batırıldığı derinliktir.
+
+Dengede, U en aza indirilir, bu da kaldırma kuvvetinin küpün ağırlığına eşit olduğu anlamına gelir. Bu nedenle, elimizde:
+\bigbreak
+$\frac{\rho gV}{2}=(\frac{\rho}{2})gV$
+
+bu ayrıca küpe etki eden geri getirme kuvvetine de eşittir
+\newpage
+Hooke yasasını kullanarak şunu yazabiliriz:
+
+$F=-kx=(\frac{\rho}{2})gV$
+
+x, küpün denge konumundan yer değiştirmesi ve k, yay sabitidir.
+
+geri çağırma kuvvetini bulmak için ikisini eşitleyip k ya göre çözersek:
+
+$k=-(\frac{\rho}{2})\frac{Vg}{x}$
+
+Açısal salınım frekansı şu şekilde verilir:
+
+$\omega=\frac{k}{m}$
+
+k yı yerine yazarak şunu elde ederiz:
+
+$\omega=\sqrt{(\frac{\rho}{2})\frac{Vg}{xm}}$
+
+Salınım frekansı şu şekilde verilir:
+
+$f=\frac{\omega}{2\pi}$
+
+$\omega$ değerini değiştirerek şunu elde ederiz:
+
+$f=\sqrt{(\frac{\rho}{2})\frac{Vg}{xm}/2\pi}$
+
+Bu nedenle, küpün salınım frekansı:
+
+$f=\sqrt{(\frac{\rho}{2})\frac{Vg}{xm}/2\pi}$
+
+
+
+\newpage
+\section{9. soru}
+Dengede, sistemin enerjisi minimumdadır, dolayısıyla enerjiyi en aza indiren $\eta$(x) fonksiyonu diferansiyel denklemi sağlar.
+
+$\frac{d}{dx}(\frac{1}{(1+(u'\times(x))^2)^{1/2}}\times n'\times(x))-(n\times\frac{x}{L^2})=0$
+
+Bu diferansiyel denklemi çözerek şunu elde ederiz:
+
+$(\eta'\times(x))^2=(C-\frac{x}{L})^2\times exp(2\times\frac{|x|}{L})$
+
+$\eta(x)=-L\times ln[cos(\frac{x}{L})]$
+
+$(\eta'\times(x))^2=(\frac{L^2}{4})\times sec^4(\frac{x}{L})$
+\bigbreak
+Çubuğa etki eden kuvvetlerin dengesini dikkate alarak L-g-$\rho_{sıvı}$ arasındaki ilişkiyi bulabiliriz. Yüzey geriliminden kaynaklanan yukarı doğru kuvvet 2m/L'dir ve yerçekiminden kaynaklanan aşağı doğru kuvvet mg / L'dir; burada m, çubuğun birim uzunluğundaki kütledir. Bu nedenle, elimizde:
+\bigbreak
+
+$2\times\frac{m}{L}=mgL\times sin(g\rho L)$
+
+bunu  L-g-$\rho_{sıvı}$ için çözersek şunu elde ederiz:
+
+$g.\frac{\rho}{L}=arcsin(\frac{2}{m}\times\frac{g}{L})$
+
+Yüzey geriliminden kaynaklanan yukarı doğru kuvvet 2m/L'dir ve yerçekiminden kaynaklanan aşağı doğru kuvvet $(P-\frac{\rho}{2}\times AL)$'dir, burada P, çubuğun ağırlık yoğunluğu ve $\rho$, sıvının yoğunluğudur. 
+
+$\eta_0$ için çözerek şunu elde ederiz:
+
+$\eta_0=(P-\frac{\rho}{2})\times Ag\times\frac{L^2}{2}\times m$
+
+
+
+\end{document}
+

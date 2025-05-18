@@ -1,0 +1,266 @@
+\documentclass[12pt]{article}
+
+\title{ \texttt{klasik mekanik ödevi 1}}
+\author{Nazif ÇELİK 090200712}
+\date{07.03.2023}
+\begin{document}
+\maketitle
+\newpage
+\section{A}
+a) Parçacık sürtünme olmadan kaydığından, ona etki eden tek kuvvet korunumlu bir kuvvet olan yerçekimidir. Bu nedenle, parçacığın t=0'daki ilk mekanik enerjisi E, kinetik ve potansiyel enerjisinin toplamı ile verilir:
+\bigbreak
+E = 1/2 mv0^2 - mgR cos(\phi_0)
+
+Burada m parçacığın kütlesi ve v0 başlangıç hızının büyüklüğüdür.
+\bigbreak
+Parçacığın hareketi dairesel bir yola sınırlıdır, bu nedenle herhangi bir t zamanındaki ivmesi merkezcil ivme ile verilir:
+\bigbreak
+ 
+ a_c = v^2/R            
+ 
+ burada v, t zamanındaki hızının büyüklüğüdür.
+
+
+\bigbreak
+Parçacığın ilk ivmesini belirlemek için, $\beta$ ve $\phi$ cinsinden başlangıç hızını $v_0$ bulmamız gerekir. 
+$v_0$'ı $\phi$ açısıyla ilişkilendirmek için enerjinin korunumunu kullanabiliriz:
+\bigbreak
+E = 1/2 mv0^2 - mgR cos(\phi) = sabit
+
+burada $\phi_0$'ı $\phi$ ile değiştirdik, çünkü enerji korunumu denklemi herhangi bir t değeri için geçerlidir.
+\bigbreak
+
+$v_0$ için çözerek şunu elde ederiz:
+\bigbreak
+v_0^2 = 2gR(cos(\phi) - cos(\phi_0))
+
+
+Bu ifadeyi merkezcil ivme denkleminde yerine koyarsak şunu elde ederiz:
+\bigbreak
+a_c = 2g(cos(\phi) - cos(\phi_0))
+\bigbreak
+Son olarak, $cos(\phi)$'yi trigonometri kullanarak $\beta$ cinsinden ifade edebiliriz:
+\bigbreak
+cos(\phi) = cos(\phi)cos(\phi_0) + sin(\beta)sin(\phi_0)
+
+Bu ifadeyi önceki denklemde yerine koyarak, parçacığın ilk ivmesini $\beta$ ve $\phi$ cinsinden elde ederiz:
+
+
+a_0 = 2g(cos(\beta)cos(\phi_0) + sin(\beta)sin(\phi_0) - cos(\phi_0)) = 2g(cos(\beta) - 1)cos(\phi_0) + 2g sin(\beta)sin(\phi_0 )
+\bigbreak
+Bu nedenle parçacığın ilk ivmesi, x ekseni ile ilk hız vektörü arasındaki hem $\phi_0$ açısına hem de $\beta$ açısına bağlıdır.
+\newpage
+\section{B}
+Tel, sabit $\Omega$ açısal hızıyla döndüğünden, parçacık, dönme ekseninden radyal olarak dışa doğru etki eden bir merkezkaç kuvvetine maruz kalır. Bu kuvvetin büyüklüğü $mR\Omega^2$'dir ve tel boyunca her noktada tele dik olarak yönlendirilir.
+\bigbreak
+t=0 anında, parçacığın x yönünde başlangıç hızı v$_0$'dır ve ayrıca negatif y yönünde mg yerçekimi kuvvetine tabidir. Tel döndükçe, parçacık tel boyunca hareket edecek ve hareketini etkileyen değişen bir merkezcil kuvvetle sonuçlanan yerçekimi kuvvetinin değişen yönünü deneyimleyecektir.
+\bigbreak
+Açısal hız $\Omega$'e ve $\phi$ arasındaki ilişkiyi bulmak için parçacığın tel boyunca hareketini düşünebiliriz. Tel boyunca etki eden yerçekimi kuvvetinin bileşeni şu şekilde verilir:
+\bigbreak
+F_g = -mg sin(\phi)
+\bigbreak
+Tel boyunca etki eden merkezkaç kuvvetinin bileşeni şu şekilde verilir:
+\bigbreak
+F_c = mR\Omega^2 sin(\theta)
+\bigbreak
+burada $\theta$, tel ile dikey y ekseni arasındaki açıdır. t=0 anında, 
+\bigbreak
+$\theta = \pi/2 - \phi_0$.
+\bigbreak
+Tel boyunca etki eden net kuvvet bu nedenle:
+\bigbreak
+F_{net} = -mg sin(\phi) + mR\Omega^2 sin(\theta)
+\bigbreak
+Newton'un ikinci yasasını kullanarak şunu yazabiliriz:
+\bigbreak
+m\ddot\phi = F_{net}
+\bigbreak
+burada $\ddot\phi$ parçacığın tel boyunca açısal ivmesidir.
+\bigbreak
+$F_{net}$, $sin(\theta)$ ve $\theta$ ifadelerini yukarıdaki denklemde yerine koyarak şunu elde ederiz:
+\bigbreak
+m\ddot\phi = -mg sin(\phi) + mR\Omega^2 cos(\phi_0) sin(\phi)
+\bigbreak
+Bu, $\ddot\phi$ açısal ivmesini $\Omega$ açısal hızı ve $\phi_0$ başlangıç açısı ile ilişkilendiren doğrusal olmayan bir diferansiyel denklemdir.
+Parçacığın tel üzerinde maksimum yüksekliğe ulaştığı $\Omega$ kritik değerini $\Omega_c$ bulmak için, $\ddot\phi$ = 0 ayarlayabilir ve $\Omega$ için çözebiliriz:
+\bigbreak
+\Omega_c^2 = g/(R cos(\phi_0))
+\bigbreak
+Bu kritik $\Omega$ değeri, mümkün olan minimum $\phi$ değerine karşılık gelir, çünkü bu, parçacığın tel üzerinde maksimum yükseklikte kalacağı $\Omega$ değeridir. $\Omega$ > $\Omega_c$ için, parçacık tel üzerindeki maksimum yükseklik etrafında salınır ve maksimum salınım açısı şu şekilde verilir:
+\bigbreak
+\phi_{max} = cos^-1(\omeaga_c/\Omega) - \phi_0
+\bigbreak
+$\Omega < \oemga_c$ için, parçacık telden aşağı kayacak ve açısal ivmesi $\ddot\phi$ negatif olacaktır.
+Bu nedenle, $\Omega$ açısal hızı ve $\phi$ açısı arasındaki ilişki, başlangıç açısı $\phi_0$'a bağlı olan kritik açısal hızın $\Omega_c$ değerine bağlıdır. $\Omega > \Omega_c$ ise, parçacık tel üzerindeki maksimum yükseklik etrafında salınacak, $\Omega < \Omega_c$ için ise parçacık telden aşağı kayacaktır.
+\newpage
+\section{C ve D}
+Parçacığın mutlak ivmesini bulmak için, parçacığa radyal ve teğet yönlerde etki eden kuvvetleri çözmemiz gerekir. Parçacığın tel boyunca hareketini tanımlamak için kutupsal koordinatları $(\rho, \phi)$ ve birim vektörleri $(\hat\rho, \hat\phi)$ kullanabiliriz.
+\bigbreak
+Parçacığın radyal ivmesi şu şekilde verilir:
+\bigbreak
+a_\rho = -g sin(\phi) + R\Omega^2 cos(\phi)
+\bigbreak
+Bu, yerçekimi kuvveti ile parçacığa radyal yönde etki eden merkezkaç kuvvetinin toplamıdır.
+Parçacığın teğetsel ivmesi şu şekilde verilir:
+\bigbreak
+a_\phi = R\ddot\phi
+Bu, parçacığın tel boyunca açısal ivmesidir ve bu, $\phi$ açısının zamana göre ikinci türevi çarpı R yarıçapına eşittir.
+\bigbreak
+Bu ivmeleri $\hat\rho$ ve $\hat\phi$ temel vektörleri cinsinden ifade etmek için şu ilişkiyi kullanabiliriz:
+\bigbreak
+\hat\rho = cos(\phi) \hat{x} + sin(\phi) \hat{y}
+
+\hat\phi = -sin(\phi) \hat{x} + cos(\phi) \hat{y}
+\bigbreak
+
+burada $\hat{x}$ ve $\hat{y}$, x ve y yönlerindeki birim vektörlerdir.
+\bigbreak
+Parçacığın mutlak ivmesi şu şekilde yazılabilir:
+\bigbreak
+a = a_{\rho} \hat\rho + a_{\phi} \hat{\phi}
+\bigbreak
+$a_{\rho}$ ve $a_{\phi}$ ifadelerini değiştirerek şunu elde ederiz:
+\bigbreak
+a = (-g sin(\phi) + R\Omega^2 cos(\phi)) cos(\phi) \hat{\rho} + R\ddot\phi (-sin(\phi)) \hat{\phi}
+\bigbreak
+Bu ifadeyi basitleştirerek şunu elde ederiz:
+\bigbreak
+a = (-g cos(\phi) sin(\phi) + R\Omega^2 cos^2(\phi)) \hat{\rho} - R\ddot\phi sin(\phi) \hat{\phi}
+\bigbreak
+Son olarak, bu ivmeyi verilen \beta×\phi=k temeli cinsinden ifade edebiliriz:
+\bigbreak
+a = (-g cos(\phi) sin(\phi) + R\Omega^2 cos^2(\phi)) \hat{\beta} - (R\ddot\phi sin(\phi)) \hat{\phi}
+\newpage
+Burada $\hat{\beta}$, hem $\hat{\rho}$ hem de $\hat{\phi}$'ye dik birim vektördür ve şu şekilde verilir:
+\bigbreak
+\hat{\beta} = -sin(\phi) \hat{x} + cos(\phi) \hat{y}
+\bigbreak
+Bu nedenle, parçacığın tel boyunca $\Omega$, R, $\dot\phi$ ve $\ddot\phi$ cinsinden mutlak ivmesi şu şekilde verilir:
+\bigbreak
+a = (-g cos(\phi) sin(\phi) + R\Omega^2 cos^2(\phi)) \beta×-\phi - (R\ddot\phi sin(\phi)) \phi
+\bigbreak
+burada $\beta\times\phi$, $\hat{\beta}$ ve $\hat{\phi}$'nin cross productıdır ve k, hareket düzlemine dik birim vektördür.
+\newpage
+\section{E}
+$\phi = \phi/2$ olduğunda anlık ivmeyi bulmak için (d) kısmında türetilen ifadeyi kullanabiliriz:
+\bigbreak
+a = (-g cos(\phi) sin(\phi) + R\Omega^2 cos^2(\phi)) \beta\times\phi - (R\ddot\phi sin(\phi)) \phi
+
+$\phi = \phi/2$'de şuna sahibiz:
+\bigbreak
+cos(\phi) = cos(\phi/2)
+
+sin(\phi) = sin(\phi/2)
+
+cos^2(\phi) = cos^2(\phi/2)
+
+sin(\phi) = 2 sin(\phi/2) cos(\phi/2) 
+
+(sin için çift açı formülünü kullanarak)
+\bigbreak
+Bu değerleri değiştirerek şunu elde ederiz:
+\bigbreak
+a = (-g/2) sin(\phi/2) cos(\phi/2) \beta\times\phi - (R/2) \ddot\phi sin(\phi/2) \phi
+\bigbreak
+Bu ifadeyi basitleştirerek şunu elde ederiz:
+\bigbreak
+a = (-g/4) sin(\phi) \beta\times\phi - (R/2) \ddot\phi sin(\phi/2) \phi
+\bigbreak
+Bu nedenle, parçacığın $\phi = \phi/2$'deki anlık ivmesi şu şekilde verilir:
+\bigbreak
+a = (-g/4) sin(\phi/2) \beta\times\phi - (R/2) \ddot\phi sin(\phi/4) \phi
+\bigbreak
+İvmenin yönünün hareket düzlemine dik olduğuna ve vekörel çarpım $\beta\times\phi$ ile verildiğine dikkat edin. İvmenin büyüklüğü g, R, $\phi/2$, $\ddot\phi$ değerlerine ve $\phi$ değeri tarafından belirlenen $\hat\beta$ ile $\hat\phi$ arasındaki açıya bağlıdır.
+\newpage
+\section{F}
+$\phi = \phi/2$ olduğunda elektrik motorunun ihtiyaç duyduğu torku bulmak için (c) kısmında türetilen açısal ivme ifadesini kullanmamız gerekir:
+\bigbreak
+\ddot\phi = (-g/R) sin(\phi) + \Omega^2 cos(\phi)
+
+$\phi = \phi/2$'de şuna sahibiz:
+\bigbreak
+sin(\phi) = sin(\phi/2)
+
+cos(\phi) = cos(\phi/2)
+
+Bu değerleri değiştirerek şunu elde ederiz:
+\bigbreak
+\ddot\phi = (-g/R) sin(\phi/2) + \Omega^2 cos(\phi/2)
+\bigbreak
+Elektrik motorunun ihtiyaç duyduğu tork şu şekilde verilir:
+\bigbreak
+\tau = I\alpha
+
+burada I, telin eylemsizlik momenti ve $\alpha$ açısal ivmedir.
+
+R yarıçaplı ince dairesel bir telin eylemsizlik momenti şu şekilde verilir:
+\bigbreak
+I = (1/2)MR^2
+
+burada M, telin kütlesidir.
+
+$\ddot\phi$ ifadesini ve eylemsizlik momentini tork denkleminde değiştirerek şunu elde ederiz:
+\bigbreak
+\tau = (1/2)MR^2 [(-g/R) sin(\phi/2) + \Omega^2 cos(\phi/2)]
+
+Bu ifadeyi basitleştirerek şunu elde ederiz:
+\bigbreak
+\tau = (1/2)MgR sin(\phi/2) - (1/2)M\Omega^2 R^2 cos(\phi/2)
+\bigbreak
+Bu nedenle, $\phi = \phi/2$ olduğunda elektrik motorunun ihtiyaç duyduğu tork şu şekilde verilir:
+\bigbreak
+\tau = (1/2)MgR sin(\phi/2) - (1/2)M\Omega^2 R^2 cos(\phi/2)
+\newpage
+Elektrik motorunun o anda tükettiği gücü bulmak için şu ifadeyi kullanabiliriz:
+\bigbreak
+P = \tau\Omega
+
+burada $\Omega$, $\Omega$'a eşit olan telin açısal hızıdır.
+
+Tork için ifadeyi ve açısal hızın değerini güç için denklemde değiştirerek şunu elde ederiz:
+\bigbreak
+P = [(1/2)MgR sin(\phi/2) - (1/2)M\Omega^2 R^2 cos(\phi/2))]\Omega
+
+Bu ifadeyi basitleştirerek şunu elde ederiz:
+\bigbreak
+P = (1/2)M\Omega[gR sin(\phi/2) - \OmegaR^2 cos(\phi/2)]
+
+Bu nedenle, $\phi = \phi/2$ olduğunda elektrik motorunun tükettiği güç şu şekilde verilir:
+\bigbreak
+P = (1/2)M\Omega[gR sin(\phi/2) - \OmegaR^2 cos(\phi/2)]
+\newpage
+\section{G}
+Parçacık parabolik tel boyunca sabit hızla kayarken, teğetsel ivmesi sıfır olmalıdır. Teğetsel ivme şu şekilde verilir:
+\bigbreak
+a_t = r \alpha
+
+r, parçacığın dönme ekseninden uzaklığı ve $\alpha$, telin açısal ivmesidir.
+Parabolik tel için herhangi bir noktadaki eğrilik yarıçapı şu şekilde verilir:
+\bigbreak
+r = (1 + \dot{y}^2)^(3/2) / |\ddot{y}|
+
+burada $\dot{y}$ ve $\ddot{y}$, y'nin x'e göre birinci ve ikinci türevleridir.
+
+Parabolik tel için elimizde:
+\bigbreak
+y = x^2/L
+
+\dot{y} = 2x/L
+
+\ddot{y} = 2/L
+
+Bu değerleri değiştirerek şunu elde ederiz:
+\bigbreak
+r = (1 + (4x^2/L^2))^(3/2) / (4/L)
+\newpage
+Teğetsel ivme, aşağıdaki formül kullanılarak açısal ivme cinsinden ifade edilebilir:
+\bigbreak
+\alpha = a_t / r
+
+$a_t = 0$ olduğundan \alpha = 0
+\bigbreak
+Bu, parçacığın tel boyunca sabit bir hızla kayması için telin açısal hızının sabit olması gerektiği anlamına gelir. Bu nedenle: $\Omega = sabit$
+\bigbreak
+Dönen bir kovadaki suyun serbest yüzeyinin neden parabolik bir şekil aldığını anlamak için su moleküllerine etki eden kuvvetleri düşünebiliriz. Yerçekimi kuvveti suyu aşağı çekerken, merkezkaç kuvveti suyu dışarı doğru iter. Sonuç olarak, kovanın tabanına yakın su molekülleri kovanın dışına doğru net bir kuvvet uygularken, kovanın tepesine yakın su molekülleri kovanın merkezine doğru net bir kuvvet uygular. Bu kuvvetleri dengelemek için su yüzeyinin şeklinin ayarlanması gerekir. Parabolik bir şekil bu dengeyi sağlar, çünkü yüzeyin eğriliği, merkezkaç kuvvetinin daha güçlü olduğu kovanın dışına yakın yerlerde daha dik ve yerçekimi kuvvetinin daha güçlü olduğu kovanın merkezine yakın yerlerde daha düzdür. Bu nedenle, suyun serbest yüzeyi, sabit hızla dönen kovanın içinde parabolik bir şekil alır.
+\end{document}
+

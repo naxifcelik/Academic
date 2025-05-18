@@ -1,0 +1,278 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\title{ \texttt{klasik mekanik ödevi 4}}
+\author{Nazif ÇELİK 090200712}
+\date{28.04.2023}
+\begin{document}
+\maketitle
+\href{https://github.com/naxifcelik/classical-mechanics/blob/main/hw4.tex}
+\newpage
+\large
+
+
+\newpage
+\section{10. soru}
+a. Göldeki ortalama su seviyesinin $\frac{d\eta }{dt}$ değişim hızı ile kanaldaki akış hızı (v) arasındaki ilişki, sıvı akışı için süreklilik denklemi kullanılarak ifade edilebilir.
+Süreklilik denklemi, belirli bir bölgeye giren sıvının hacminin aşağıdakilere eşit olması gerektiğini belirtir:
+bölge içinde sıvı kaynağı veya batması olmadığı varsayılarak o bölgeden çıkan sıvı hacmi.
+Matematiksel olarak süreklilik denklemi şu şekilde yazılabilir:
+\bigbreak
+$\frac{\partial Svh}{\partial t} = \frac{\partial Sv}{\partial x}$
+
+burada S kanalın kesit alanıdır, v kanaldaki akış hızıdır, göldeki su seviyesidir, t zamandır ve x kanal boyunca olan mesafedir. Kanalın dar olduğunu ve kesit alanının yaklaşık olarak sabit olduğunu varsayarsak, şunları yapabiliriz
+süreklilik denklemini şu şekilde basitleştiririz:
+\bigbreak
+$ S\frac{\partial v}{\partial t}=-Sv\frac{\partial h}{\partial x}$
+Her iki tarafı da S'ye bölerek ve yeniden düzenleyerek şunu elde ederiz:
+\bigbreak
+$ \frac{\partial v}{\partial t}=-v\frac{\partial h}{\partial x}$
+\bigbreak
+Bu denklem, akış hızının değişim hızının (dv / dt) negatif ile orantılı olduğunu gösterir.
+akış hızının (v) çarpımı ve göldeki su seviyesinin değişim hızı $(\frac{\partial h}{\partial x})$. Yani, eğer
+göldeki su seviyesi artıyor ($\frac{\partial h}{\partial t}>0$), kanaldaki akış hızı azalacak ($\frac{\partial v}{\partial t}<0$) ve bunun tersi de geçerlidir.
+\bigbreak
+b. Kanaldaki suyun kinetik enerjisi şu şekilde ifade edilebilir:
+KE = 1/2*pv2A
+
+burada p suyun yoğunluğudur, v kanaldaki akış hızıdır ve A kanalın kesit alanıdır.
+
+Göldeki ortalama su seviyesi salındığından, a bölümünde türetilen ilişkiyi kullanarak kanaldaki akış hızını su seviyesinin değişim hızının (dh/dt) bir fonksiyonu olarak ifade edebiliriz:
+\bigbreak
+v = - (dh/dt)/x
+
+Bu ifadeyi kinetik enerji denklemine v ile değiştirerek şunu elde ederiz:
+
+$KE = 0,5 p ((dh/dt)/dx)^2 A$
+
+Bu nedenle, kanaldaki suyun kinetik enerjisi, su seviyesinin değişim hızının (dh / dt) bir fonksiyonu olarak ifade edilebilir.
+
+c. Göldeki suyun yerçekimi potansiyel enerjisi şu şekilde ifade edilebilir:
+
+PE = pghA
+
+burada p suyun yoğunluğudur, g yerçekimine bağlı ivmedir, h göldeki su seviyesidir ve A gölün yüzey alanıdır.
+
+$\partial \frac{h}{\partial}t=\frac{\partial\frac{n}{\partial}t}{A}$
+
+Göldeki ortalama su seviyesi (dn / dt) oranında arttığından, su seviyesinin değişim oranını şu şekilde ifade edebiliriz: Bu ifadeyi yerçekimi potansiyel enerjisi denklemine (dh / dt) ile değiştirerek, elde ederiz:
+\bigbreak
+$PE = pg((dn/dt)/A)n^2$
+
+Bu nedenle, göldeki suyun yerçekimi potansiyel enerjisi, $n^2$ cinsinden ifade edilebilir; 
+
+burada n, ortalama su seviyesinin (dn / dt) değişim oranıdır.
+
+d. Bu göl için Helmholtz frekansı $(w_{Helmholtz})$ aşağıdaki formül kullanılarak hesaplanabilir:
+\bigbreak
+w_{Helmholtz} = 2$\pi$v / dalga boyu
+
+Dalga boyunun $(\lambda)$ çok olduğu göz önüne alındığında
+\newpage
+a. Kanaldaki su seviyesinin (d$\eta$ / dt) değişim hızı ile akış hızı (v) arasındaki ilişki (d$\eta$ / dt) = VA'dır, burada A kanalın kesit alanıdır.
+
+b. Göldeki suyun kinetik enerjisi, su seviyesinin (d$\eta$ / dt) değişim hızının ve suyun yoğunluğunun  $(p) KE=0,5pAv^2$ olarak bir fonksiyonu olarak ifade edilebilir.
+
+c. Göldeki suyun yerçekimi potansiyel enerjisi, $GPE= pghn^2$  göre su seviyesinin (n) karesi cinsinden ifade edilebilir, burada g yerçekimine bağlı ivmedir ve h gölün ortalama derinliğidir.
+
+d. Bu göl için Helmholtz rezonansının frekansı etkin bir şekilde sıfırdır, bu da gölün Helmholtz frekansında önemli rezonans davranışı göstermediğini gösterir.
+\newpage
+\section{11. soru}
+
+Bu problemde, silindirin hareketi iki boyutta gerçekleşir: düzlemde kayma ve silindirin kendi ekseni etrafındaki dönme. Bu nedenle, problem iki serbestlik derecesine sahiptir. Ancak, çakılı kütle silindirin simetrik ekseni etrafında döneceğinden, bu hareket doğrusal momentum korunumu nedeniyle silindirin hareketinde bir etkiye sahip olmayacaktır. Bu nedenle, problem tek serbestlik derecesine indirgenebilir.
+
+Silindirin eylemsizlik momenti, simetrik bir cisim olduğundan, $I = \frac{1}{2}MR^2$ şeklinde verilir. Çakılı kütle etrafındaki açısal momentumu hesaplamak için, kütle silindirin simetrik ekseni etrafında döneceğinden, kütle etrafındaki eylemsizlik momenti $I_{cm} = \frac{1}{2}M(R/2)^2 = \frac{1}{8}MR^2$ olacaktır.
+
+(a) İlk olarak, $t=t_0$ anındaki durumu ele alalım. Bu durumda, çakılı kütle silindirin eksenine dik bir çizgi üzerinde bulunmaktadır, yani $\phi=0$ olacaktır. Bu nedenle, anlık dönme merkezi silindirin alt kenarında olacaktır. Silindirin eylemsizlik momenti $I = \frac{1}{2}MR^2$ olacaktır. Çakılı kütle etrafındaki eylemsizlik momenti $I_{cm} = \frac{1}{8}MR^2$ olduğundan, toplam eylemsizlik momenti $I_{total} = I + I_{cm} = \frac{5}{8}MR^2$ olacaktır.
+
+Şimdi, $t=t_1$ anındaki durumu ele alalım. Bu durumda, çakılı kütle silindirin alt kenarından R/2 uzaklığında bulunmaktadır, yani $\phi=\pi/2$ olacaktır. Bu nedenle, anlık dönme merkezi silindirin üst kenarında olacaktır. Silindirin eylemsizlik momenti yine $I = \frac{1}{2}MR^2$ olacaktır. Çakılı kütle etrafındaki eylemsizlik momenti yine $I_{cm} = \frac{1}{8}MR^2$ olduğundan, toplam eylemsizlik momenti $I_{total} = I - I_{cm} = \frac{3}{8}MR^2$ olacaktır.
+\newpage
+(b) Eylemsizlik momenti zamanla değiştiğinden, türevlerini hesaplamalıyız. İlk olarak, $t=t_0$ için hesaplayalım. Bu durumda, $\omega = \omega_0$ olacaktır. Eylemsizlik momenti, $\phi$ açısına bağlı olarak değişir. Eylemsizlik momentinin $\phi$'ye göre türevi aşağıdaki gibi hesaplanır:
+
+$$\frac{dI_{total}}{d\phi} = \frac{d}{d\phi} \left( \frac{5}{8}MR^2 \right) = 0$$
+
+Çünkü eylemsizlik momenti $\phi$'ye bağlı değildir. Dolayısıyla, türev sıfırdır.
+
+Şimdi, $t=t_1$ için hesaplayalım. Bu durumda, $\omega = \omega_1$ olacaktır. Eylemsizlik momenti yine $\phi$ açısına bağlıdır ve aşağıdaki gibi hesaplanır:
+
+$$\frac{dI_{total}}{d\phi} = \frac{d}{d\phi} \left( \frac{3}{8}MR^2 \right) = -\frac{3}{8}MR^2 $$
+\newpage
+(c) Lagrange denklemleri şu şekildedir:
+
+$$\frac{d}{dt} \left( \frac{\partial T}{\partial \dot{\phi}} \right) - \frac{\partial T}{\partial \phi} = 0 $$
+
+Burada, T kinetik enerjiyi ifade eder. Kinetik enerji, silindirin düzlemdeki hareketi ve kendi ekseni etrafındaki dönme hareketi ile ilgilidir. Silindirin düzlemdeki hareketi, potansiyel enerjiyi hesaba katmadan kinetik enerjiye katkıda bulunur. Silindirin kendi ekseni etrafındaki dönme hareketi, eylemsizlik momentinin açısal hıza çarpımının karesine orantılıdır. Dolayısıyla, kinetik enerji aşağıdaki gibi ifade edilebilir:
+
+$$T = \frac{1}{2}M\dot{x}^2 + \frac{1}{2}I\dot{\phi}^2$$
+
+Burada, $\dot{x}$ silindirin düzlemdeki hızını ve $\dot{\phi}$ açısal hızını ifade eder. Düzlemdeki hareket, silindirin eğik düzlemde kayması nedeniyle oluşur ve aşağıdaki gibi ifade edilir:
+
+$$\dot{x} = R\dot{\phi} \cos \alpha$$
+
+Şimdi, $\phi = 0$ için Lagrange denklemlerini yazalım:
+
+$$\frac{d}{dt} \left( \frac{\partial T}{\partial \dot{\phi}} \right) - \frac{\partial T}{\partial \phi} = 0 $$
+
+Burada, $\phi$ açısına göre türev alınır ve $\phi=0$ için değerlendirilir. Böylece, denklem aşağıdaki şekilde yazılabilir:
+
+$$\frac{d}{dt} \left( MI\dot{\phi} \right) = 0 $$
+
+Çakılı kütle, silindirin alt kenarında olduğundan, $I = \frac{5}{8}MR^2$ ve $M_1 = \frac{1}{2}M$ olacaktır. Bu nedenle, yukarıdaki denklem şu şekilde yazılabilir:
+
+$$\frac{d}{dt} \left( \frac{5}{16}MR^2 \dot{\phi} \right) = 0 $$
+
+Bu denklemden, $MR^2 \dot{\phi}$ sabit olduğu sonucuna varabiliriz. Bu nedenle, $\dot{\phi}$ silindirin düzlemdeki hızı ve eğik düzlemdeki eğim açısına bağlıdır. $\phi=0$ olduğunda, $\dot{\phi}$ maksimum değerine ulaşır ve sıfıra doğru azalır. Dolayısıyla, $\frac{\partial}{\partial\phi}T(\phi,\dot{\phi})=0$ denklemi $\phi=0$ için geçerlidir.
+
+Benzer şekilde, $\phi = \pi/2$ durumu için Lagrange denklemlerini yazalım:
+
+$$\frac{d}{dt} \left( \frac{\partial T}{\partial \dot{\phi}} \right) - \frac{\partial T}{\partial \phi} = 0 $$
+
+Burada, $\phi$ açısına göre türev alınır ve $\phi=\pi/2$ için değerlendirilir. Böylece, denklem aşağıdaki şekilde yazılabilir:
+
+$$\frac{d}{dt} \left( \frac{3}{16}MR^2 \dot{\phi} \right) = 0 $$
+
+Bu denklemden, $MR^2 \dot{\phi}$ sabit olduğu sonucuna varabiliriz. Bu nedenle, $\dot{\phi}$ silindirin düzlemdeki hızı ve eğik düzlemdeki eğim açısına bağlıdır. $\phi=\pi/2$ olduğunda, $\dot{\phi}$ sıfırdır ve maksimum değerine doğru artar. Dolayısıyla, $\frac{\partial}{\partial\phi}T(\phi,\dot{\phi})=0$ denklemi $\phi=\pi/2$ için geçerlidir.
+
+
+\newpage
+\section{12. soru}
+a. Sarkacın $t>0$ için denge konumu, sarkacın ivmesini sıfıra ayarlayarak bulunabilir. Sarkaç $t -> -\infinite$ durduğu için ivmesi denklem tarafından verilir
+$t <0 için a (t) = a0 exp (t / \tau) ve a (t) = a0 fort > 0.$
+Yani bizde var:
+$t> 0 için a (t) = 0$
+$t <0 için a0 = a0 exp (t / \tau)$
+Denge pozisyonunu bulmak için $t> 0$ için $a(t) = 0$ ayarlayabiliriz:
+$a0 = 0$
+Bu, sarkacın dengede olduğu ve t> 0 için herhangi bir hızlanma yaşamadığı anlamına gelir.
+\bigbreak
+b. Sarkacın t> 0 için yeni denge konumu etrafındaki salınımlarının genliğini bulmak için küçük açı yaklaşımını kullanabiliriz. Basit bir sarkaç için hareket denklemi şu şekilde verilir:
+\bigbreak
+$\theta"(t)+(\frac{g}{L}sin(\theta(t)))=0$
+
+burada  $\theta(t)$ sarkacın açısal yer değiştirmesidir, g yerçekimine bağlı ivmedir ve L sarkacın uzunluğudur. Sarkaç yeni denge konumu etrafında salındığı için açısal yer değiştirmenin küçük olduğunu varsayabiliriz ve $sin(\theta(t)) 'ye  \theta(t)$ yaklaşabiliriz.
+\bigbreak
+$\theta"(t)+(\frac{g}{L}\theta(t))=0$
+
+Şimdi, yukarıdaki denklemde $t> 0$ için $a(t)=a0$ aracının ivmesini değiştirebilir ve $\theta(t)$ için çözebiliriz. $\tau -> 0+$ sınırını almak, sarkacın salınımlarının genliğini bulmamızı sağlayacaktır.
+\bigbreak
+c. Araç tarafından sarkaca t = 0'a kadar aktarılan enerji, araç tarafından zamanla sarkaca aktarılan gücün entegre edilmesiyle hesaplanabilir. Aktarılan güç, aracın sarkaç üzerine uyguladığı kuvvetin ürünü (m × a (t) 'ye eşittir) ve sarkacın hızı ($L × \theta'(t)$ 'ye eşittir, burada $\theta'(t)$, aracın açısal hızıdır. 
+
+Aktarılan güç = $m × a(t) × L × \theta'(t)$
+Bu ifadeyi zamana göre $t = -\infty$'dan $t = 0$'a entegre etmek bize arabanın sarkaca aktardığı enerjiyi verecektir.
+
+d. Hava ile küçük sürtünme kuvveti nedeniyle entropideki artış, entropi değişimi formülü kullanılarak hesaplanabilir:
+\bigbreak
+$\Delta S = Q / T$
+
+entropideki değişim olduğu yerde, Q ısı transferidir ve T sıcaklıktır. Bu durumda, aracın içindeki sıcaklığın sabit olduğu varsayıldığından, sürtünme kuvveti tarafından zaman içinde dağıtılan gücün entegre edilmesiyle hesaplanabilen ısı transferi Q'ya bağlı olacaktır. Sürtünme kuvveti tarafından dağıtılan güç, sürtünme kuvvetinin (sarkacın hızıyla orantılı olan) ve sarkacın hızının ürünü tarafından verilir. 
+\bigbreak
+$Dağıtılan güç = c \times \theta'(t)^2$
+
+burada c, sürtünme kuvveti ile orantılı bir sabittir. Bu ifadeyi zamana göre $t = 0$'dan $t = \infty$'a entegre etmek bize dağıtılan toplam gücü ve dolayısıyla ısı transferini verecektir. Daha sonra entropideki artışı hesaplamak için $\Delta S$ formülünü kullanabiliriz. $\tau=+\infty$  durumunda, sürece adyabatik sönümleme denir.
+\newpage
+\section{13. soru}
+a.Sarkaç, yatayda salınımda olduğunda, yükseklik değişikliği yarıçap R'yi aşar. Bu yükseklik değişikliği, sarkacın salınım periyodu boyunca gerçekleştiği için, sarkacın açısının zamanla değişimine bağlı olarak da değişir. Bu yüzden, sarkacın açısı $\theta$ ile yükseklik değişikliği arasındaki ilişkiyi kullanarak, yükseklik değişikliğini zamanla ifade edebiliriz:
+
+$y(t) = R(1 - cos(\theta(t)))$
+
+Sarkaç açısı $\theta$, sarkacın salınım periyodu T ve zaman t arasındaki ilişki şöyledir:
+
+$\theta(t) = 2\pi t / T$
+
+Böylece, yükseklik değişikliğini zamana bağlayabiliriz:
+
+$y(t) = R(1 - cos(2\pi t / T))$
+
+b. Küçük açı yaklaşımı yaparak, sarkacın açısının sinüs fonksiyonuna yaklaşık olarak eşit olduğunu farz edebiliriz. Bu yaklaşım, sarkaç açısı $\theta$'nın, $sin(\theta) = \theta$ olduğu durumlar için geçerlidir. Bu yaklaşımı kullanarak, sarkaç açısının zamana bağlı değişimini bulabiliriz:
+
+$\theta(t) = D / L * sin(2\pi t / T)$
+
+Sarkacın açısının zamana göre birinci türevini alarak, açısal hızını hesaplayabiliriz:
+
+$\omega(t) = d\theta(t) / dt = (2\pi * D / L * T) * cos(2\pi t / T)$
+
+Sarkacın açısının zamana göre ikinci türevini alarak, açısal ivmesini hesaplayabiliriz:
+
+$\alpha(t) = d^2\theta(t) / dt^2 = -(2\pi * D / L * T^2) * sin(2\pi t / T)$
+
+Sarkacın açısındaki küçük değişim, açısal ivmeyle orantılıdır. Eylemsizlik momenti $I_0$ ve açısal ivme $\alpha$ arasındaki ilişki, Newton'un İkinci Yasası'ndan elde edilebilir:
+
+$I_0 * d^2\theta(t) / dt^2 = -m * g * L * sin(\theta(t))$
+
+Burada, m sarkacın kütlesi ve g yerçekimi ivmesidir. Bu diferansiyel denklemin çözümü, sarkacın açısının zamana göre değişimini verecektir:
+
+$\theta(t) = (D / L) * sin(2\pi t / T) * exp(-t / T_{sqrt})$
+
+Burada, $T_{sqrt}$, sarkacın sürtünme katsayısı (direnç) ile orantılı olan bir sürtünme süresidir:
+
+$T_{sqrt} = sqrt(I_0 / (m * g * L^2))$
+
+c. İdeal bir sismograf, etrafındaki hareketleri algılamadan sabit bir konumda kalabilir. Bu durumda, ideal bir kalem çizim yapmaz ve kağıtta sabit bir noktada kalır. Gerçek bir sismograf ise, hareketleri algılayarak kalemde hareketlere neden olur ve kağıt üzerinde hareketli bir çizgi çizer. Yani, ideal bir sismografda kalem hareketsiz kalırken, gerçek bir sismografda kalem hareket eder.
+
+Sarkacın hareketi, $y(t) = R * sin(2\pi t / T)$ olarak verilmiştir. Bu harekete karşılık gelen ivme, yukarıda bulunan açısal ivmenin yönüne göre yönü değişen bir ivme olacaktır. Bu ivmeyi bulmak için, açısal ivmeden yola çıkarak, açısal ivmenin yarattığı merkezcil ivmeyi bulabiliriz:
+
+$a_c = \alpha * L$
+
+Burada, L sarkacın uzunluğudur. Merkezcil ivmenin yönü, sarkacın açısına bağlı olarak değişir. Bu yüzden, merkezcil ivmenin y yönündeki bileşenini bulmak için, açısal ivmenin yönünü ve sarkacın açısını dikkate almalıyız:
+
+$a_y = -\alpha * L * sin(\theta(t))$
+
+Sarkacın hareketi $y(t) = R * sin(2\pi t / T)$ olduğuna göre, yönü değişen ivmenin zamanla değişen bileşenini bulabiliriz:
+
+$a_y(t) = -\alpha(t) * L * sin(\theta(t)) = (2\pi * D * L / I_0) * sin(2\pi t / T) * sin(\theta(t)) * exp(-t / T_sqrt)$
+
+Bu ivmenin integralini alarak, kalemdeki hareketi bulabiliriz:
+
+$v_y(t) = \int_0^t a_y(t') dt'$
+
+$v_y(t) = -(2\pi * D * L / I_0) * (T / (4\pi - T^2)) * (cos(2\pi t / T) - cos(T / T_sqrt + 2\pi t / T)) * exp(-t / T_sqrt)$
+
+Bu integralin bir kez daha alınmasıyla, kalemdeki yer değişimini bulabiliriz:
+
+$y_{kalem}(t) = \int_0^t v_y(t') dt'$
+
+$y_{kalem}(t) = (2\pi * D * L / I_0) * (T / (4\pi - T^2)) * (sin(T / T_{sqrt} + 2\pi t / T) - sin(2\pi t / T)) * exp(-t / T_{sqrt})$
+
+Bu formül, sismografın hareketine karşılık gelen kalemdeki yer değişimini verir. İdeal bir sismografda kalem hareketsiz kalacağından, $y_{kalem}(t) = 0$ olacaktır. Bu formülü kullanarak, gerçek bir sismografda kalemdeki yer değişimini ve ideal bir sismografda kalemdeki yer değişimini Python gibi bir programlama dilinde şu şekilde çizebiliriz:
+
+\begin{verbatim}
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Constants
+L = 1.0  # length of the pendulum
+T = 0.2  # period of the pendulum
+D = 0.1  # amplitude of the ground motion
+g = 9.8  # acceleration due to gravity
+I0 = 0.95 * L**2  # moment of inertia
+T_sqrt = np.sqrt(I0 / (g * L**2))  # damping time
+
+# Time array
+t = np.linspace(0, 2*T, 1000)
+
+# Function for kalemdeki yer değişimi
+def y_kalem(t):
+    alpha = -2 * np.pi * D * L / (T**2 * I0)
+    A = 2 * np.pi * D * L / I0 * T / (4*np.pi - T**2)
+    B = np.sin(T / T_sqrt + 2*np.pi*t/T) - np.sin(2*np.pi*t/T)
+    return A * B * np.exp(-t / T_sqrt)
+
+# Plot kalemdeki yer değişimi
+plt.plot(t, y_kalem(t))
+plt.xlabel('Time (s)')
+plt.ylabel('Displacement (m)')
+plt.title('Kalemdeki Yer Değişimi')
+plt.show()
+\end{verbatim}
+
+kodun çıktısı diğer sayfadadır.
+
+
+\begin{figure}
+  \includegraphics[width=\linewidth]{tablo1.png}
+  \caption{code output.}
+  \label{fig:tablo1}
+\end{figure}
+
+
+\end{document}
+
